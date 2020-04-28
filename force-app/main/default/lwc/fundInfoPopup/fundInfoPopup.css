@@ -1,0 +1,44 @@
+:host {
+    position: absolute;
+    top: -0px;
+    left: 0;
+    pointer-events: none;
+}
+
+section {
+    width: 420px;
+}
+
+.green {
+    color: #00716b;
+}
+
+.red {
+    color: #c23934;
+}
+
+.matrix {
+    border: solid 1px #eee;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+.matrix .border-right {
+    border-right: solid 1px #eee;
+}
+
+.matrix .return {
+    font-size: 23px;
+}
+
+.matrix span {
+    font-size: 14px;
+}
+
+.matrix .center-text {
+    text-align: center;
+}
+
+.popup-icon {
+    margin-right: 8px;
+}
