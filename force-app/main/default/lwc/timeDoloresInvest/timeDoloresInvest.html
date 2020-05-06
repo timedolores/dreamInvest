@@ -1,0 +1,28 @@
+<!--
+<template>
+    <lightning-card title="Time Dolores Invest" icon-name="custom:custom14">
+      <div class="slds-m-around_medium">
+        <p>Fundos, {greeting}!</p>
+        <lightning-input label="Name" value={greeting} onchange={changeHandler}></lightning-input>
+      </div>
+    </lightning-card>
+  </template>
+-->      
+
+<template>
+    <lightning-card
+        title="Time Dolores Investimentos por Alphavantage.co"
+        icon-name="custom:custom13"
+    >
+        <div class="slds-m-around_medium">
+            <template if:true={fundos.data}>
+                <lightning-datatable
+                    key-field="Id"
+                    data={fundos.data}
+                    columns={columns}
+                >
+                </lightning-datatable>
+            </template>
+        </div>
+    </lightning-card>
+</template>
